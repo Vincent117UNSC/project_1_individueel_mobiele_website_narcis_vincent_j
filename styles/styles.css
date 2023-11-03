@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Safira March";
+    src: url("/fonts/safira_march.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Walkway SemiBold";
+    src: url("/fonts/walkway_semibold.ttf") format("truetype");
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Safira March", Georgia, serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+body {
+    font-family: "Walkway SemiBold", Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+body {
+    background-color: #d6ecff
+}
+
+body {
+    background-image: url(../images/background_skateboard.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 25vw;
+}
+
+header h1 {
+    background-color: white;
+    border: px solid black;
+    line-height: 0;
+    padding: 3vw 3vw 0vw 3vw;
+    margin: 3vw;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+header nav ul li a {
+    display: block;
+    background: white;
+    padding: .5em;
+    width: 88px;
+
+    transition: all 300ms ease-in;
+}
+
+header nav ul li a:hover {
+    background: #cdffcd;
+    transform: scale(1.3);
+}
+
+header nav ul li a img {
+    display: flex;
+    max-height: 2em;
+}
+
+main section {
+    background-color: white;
+    margin: 0vw 3vw 0vw 3vw;
+    margin-top: 520px ;
+    padding: 3vw;
+}
+
+main section h2 {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+main section p {
+    margin-bottom: 1em;
+}
+
+footer {
+    min-height: 100px;
+}
+/* home */
+body.home header nav ul li:first-of-type a {
+    background-color: #cdffcd
+}
+/* locations */
+body.locations header nav ul li:nth-of-type(2) a {
+    background-color: #cdffcd
+}
+/* charity */
+body.charity header nav ul li:nth-of-type(3) a {
+    background-color: #cdffcd
+}
+/* status */
+body.status header nav ul li:nth-of-type(4) a {
+    background-color: #cdffcd
+}
