@@ -37,18 +37,14 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0 25vw;
+    background-attachment: fixed;
 }
 
 header h1 {
     background-color: white;
-    border: px solid black;
     line-height: 0;
     padding: 3vw;
     margin: 3vw;
-}
-
-header nav {
-    width: 100%;
 }
 
 header nav ul {
@@ -65,8 +61,8 @@ header nav ul {
 header nav ul li a {
     display: block;
     background: white;
+    width: 89px;
     padding: .5em;
-    width: 88px;
 
     transition: all 300ms ease-in;
 }
@@ -77,8 +73,10 @@ header nav ul li a:hover {
 }
 
 header nav ul li a img {
-    display: flex;
-    max-height: 2em;
+    display: block;
+    max-height: 2.2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main section {
