@@ -6,43 +6,70 @@
 
 @font-face {
     font-family: 'Walkway';
-    src: url('WalkwaySemiBold.eot');
-    src: url('WalkwaySemiBold.eot?#iefix') format('embedded-opentype'),
-         url('WalkwaySemiBold.woff2') format('woff2'),
-         url('WalkwaySemiBold.woff') format('woff'),
-         url('WalkwaySemiBold.ttf') format('truetype'),
+    src: url('../fonts/WalkwaySemiBold.woff2') format('woff2'),
+         url('../fonts/WalkwaySemiBold.woff') format('woff'),
+         url('../fonts/WalkwaySemiBold.ttf') format('truetype'),
 }
 
 @font-face {
     font-family: 'Safira March Personal Use';
-    src: url('SafiraMarchPersonalUse.eot');
-    src: url('SafiraMarchPersonalUse.eot?#iefix') format('embedded-opentype'),
-         url('SafiraMarchPersonalUse.woff2') format('woff2'),
-         url('SafiraMarchPersonalUse.woff') format('woff'),
-         url('SafiraMarchPersonalUse.ttf') format('truetype'),
+    src: url('../fonts/SafiraMarchPersonalUse.woff2') format('woff2'),
+         url('../fonts/SafiraMarchPersonalUse.woff') format('woff'),
+         url('../fonts/SafiraMarchPersonalUse.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Analogist';
+    src: url('../fonts/Analogist-Regular.woff2') format('woff2'),
+         url('../fonts/Analogist-Regular.woff') format('woff'),
+         url('../fonts/Analogist-Regular.ttf') format('truetype'),
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Safira March Personal Use', Georgia, serif;
+    font-family: 'Safira March Personal Use', Analogist, Georgia, serif;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 2em;
 }
 
 body {
     font-family: "Walkway", Geneva, Verdana, sans-serif;
     font-weight: 400;
-    font-size: .9em;
+    font-size: 1em;
 }
 
 body {
     background-color: #d6ecff
 }
 
-body {
-    background-image: url(../images/background_skateboard.png);
+body.home {
+    background-image: url(../images/background_home.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0 25vw;
+    background-attachment: fixed;
+}
+
+body.locations {
+    background-image: url(../images/background_locations.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 25vw;
+    background-attachment: fixed;
+}
+
+body.charity {
+    background-image: url(../images/background_charity.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 25vw;
+    background-attachment: fixed;
+}
+
+body.status {
+    background-image: url(../images/background_status.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
     background-attachment: fixed;
 }
 
@@ -90,7 +117,7 @@ main section {
     background-color: white;
     margin: 0vw 3vw 0vw 3vw;
     margin-top: 82vh ;
-    padding: 3vw;
+    padding: 3vw 3vw 1vw 3vw;
 }
 
 main section h2 {
@@ -103,7 +130,7 @@ main section p {
 }
 
 footer {
-    min-height: 100px;
+    min-height: 120px;
 }
 /* home */
 body.home header nav ul li:first-of-type a {
