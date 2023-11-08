@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.eot');
+    src: url('Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff'),
+        url('Poppins-Regular.ttf') format('truetype'),
+        url('Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Walkway';
+    src: url('WalkwaySemiBold.eot');
+    src: url('WalkwaySemiBold.eot?#iefix') format('embedded-opentype'),
+        url('WalkwaySemiBold.woff2') format('woff2'),
+        url('WalkwaySemiBold.woff') format('woff'),
+        url('WalkwaySemiBold.ttf') format('truetype'),
+        url('WalkwaySemiBold.svg#WalkwaySemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Safira March Personal Use';
+    src: url('SafiraMarchPersonalUse.eot');
+    src: url('SafiraMarchPersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('SafiraMarchPersonalUse.woff2') format('woff2'),
+        url('SafiraMarchPersonalUse.woff') format('woff'),
+        url('SafiraMarchPersonalUse.ttf') format('truetype'),
+        url('SafiraMarchPersonalUse.svg#SafiraMarchPersonalUse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
