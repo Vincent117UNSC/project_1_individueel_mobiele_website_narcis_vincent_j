@@ -180,6 +180,10 @@ main section {
     font-size: 1.2em;
 }
 
+main section p {
+    margin-bottom: 1em;
+}
+
 main section:first-of-type {
     margin-top: 90vh ;
 }
@@ -189,33 +193,33 @@ main section h2 {
     margin-bottom: .5em;
 }
     /* home page - second section - charity \/ */
-main section:nth-of-type(2) {
+body.home main section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-main section:nth-of-type(2) h2 {
+body.home main section:nth-of-type(2) h2 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-main section:nth-of-type(2) p:first-of-type {
+body.home main section:nth-of-type(2) p:first-of-type {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-main section:nth-of-type(2) p:nth-of-type(2) {
+body.home main section:nth-of-type(2) p:nth-of-type(2) {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-main section:nth-of-type(2) p:nth-of-type(3) {
+body.home main section:nth-of-type(2) p:nth-of-type(3) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -225,7 +229,7 @@ main section:nth-of-type(2) p:nth-of-type(3) {
     text-align: center;
 }
 
-main section:nth-of-type(2) a {
+body.home main section:nth-of-type(2) a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,15 +238,16 @@ main section:nth-of-type(2) a {
     border-radius: 1em;
     margin: 0em .5em 1em .5em;
     text-decoration: none;
+    color: black;
 
     transition: background 500ms ease-in;
 }
 
-main section:nth-of-type(2) a:hover {
+body.home main section:nth-of-type(2) a:hover {
     background: #d6ecff;
 }
 
-main section:nth-of-type(2) img {
+body.home main section:nth-of-type(2) img {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -250,9 +255,46 @@ main section:nth-of-type(2) img {
     margin: 1em;
     max-width: 90%;
 }
+    /* home page - third section - How can you help? \/ */
+body.home main section:nth-of-type(3) a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdffcd;
+    font-size: 1.2em;
+    border-radius: 1em;
+    margin-bottom: 3vw;
+    padding: 3vw;
+    text-decoration: none;
+    color: black;
 
-main section p {
-    margin-bottom: 1em;
+    transition: background 500ms ease-in;
+}
+
+body.home main section:nth-of-type(3) a:hover {
+    background: #d6ecff;
+}
+
+body.home main section:nth-of-type(3) a img {
+    padding: 0px 10px;
+}
+
+@media (max-width: 500px) {
+    body.home main section:nth-of-type(3) a img {
+        max-height: 40px;
+    }
+}
+
+@media (min-width: 500px){
+    body.home main section:nth-of-type(3) a img {
+        max-height: 52px;
+    }
+}
+
+@media (min-width: 1000px){
+    body.home main section:nth-of-type(3) a img {
+        max-height: 80px;
+    }
 }
     /* footer \/ */
 footer {
