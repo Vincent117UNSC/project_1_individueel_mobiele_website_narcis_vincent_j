@@ -508,6 +508,18 @@ body.charity main section:nth-of-type(3) a:hover {
 body.status main section {
     margin: 40vh 0;
 }
+    /* about \/ */
+body.about {
+    background-image: url(../images/background_about.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 5vh;
+    background-attachment: fixed;
+}
+
+body.about main section:first-of-type {
+    margin-top: 50vh;
+}
     /* contact form \/ */
 body.contact {
     background-image: url(../images/background_contact.jpg);
