@@ -296,6 +296,13 @@ body.home main section:nth-of-type(3) a img {
         max-height: 80px;
     }
 }
+    /* page3 - charity \/ */
+body.charity main section {
+    background-image: url(../images/guide_dog_logo_light.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
     /* footer \/ */
 footer {
     display: flex;
