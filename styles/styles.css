@@ -296,6 +296,30 @@ body.home main section:nth-of-type(3) a img {
         max-height: 80px;
     }
 }
+    /* page2 - drop-off locations \/ */
+body.locations main section:first-of-type {
+    margin-top: 67vh;
+}
+
+body.locations main section iframe {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #082878;
+    border-radius: .5em;
+}
+
+body.locations main section ul {
+    list-style-type: none;
+    text-align: center;
+    margin: .5em;
+}
+
+body.locations main section address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
     /* page3 - charity \/ */
 body.charity main section:first-of-type {
     background-image: url(../images/guide_dog_logo_light.svg);
@@ -484,6 +508,8 @@ body.charity main section:nth-of-type(3) a:hover {
     /* contact form */
 body.contact {
     background-image: url(../images/background_contact.jpg);
+    background-size: 100vh;
+    background-attachment: fixed;
 }
 
 body.contact main section {
