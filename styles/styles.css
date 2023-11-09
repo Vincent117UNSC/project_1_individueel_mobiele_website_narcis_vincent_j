@@ -307,7 +307,6 @@ body.charity main section:first-of-type {
 body.charity main section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    align-items: center;
 }
 
 body.charity main section:nth-of-type(2) h2 {
@@ -463,6 +462,24 @@ body.charity main section:nth-of-type(2) img:nth-of-type(2) {
     grid-row-end: 15;
     margin: .5em;
     max-width: 90%;
+}
+
+body.charity main section:nth-of-type(3) a {
+    display: block;
+    text-align: center;
+    margin: 0vw 5vw 3vw 5vw;
+    padding: 1em;
+    background-color: #cdffcd;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+
+    transition: background 500ms ease-in;
+}
+
+body.charity main section:nth-of-type(3) a:hover {
+    background: #d6ecff;
 }
     /* footer \/ */
 footer {
