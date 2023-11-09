@@ -188,7 +188,7 @@ main section:first-of-type {
     margin-top: 90vh ;
 }
 
-main section h2 {
+main section h2, h3 {
     text-align: center;
     margin-bottom: .5em;
 }
@@ -297,11 +297,172 @@ body.home main section:nth-of-type(3) a img {
     }
 }
     /* page3 - charity \/ */
-body.charity main section {
+body.charity main section:first-of-type {
     background-image: url(../images/guide_dog_logo_light.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
+}
+
+body.charity main section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+
+body.charity main section:nth-of-type(2) h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+body.charity main section:nth-of-type(2) p:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+    /*Stichting OOGappeltjes*/
+body.charity main section:nth-of-type(2) h3:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(6) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+body.charity main section:nth-of-type(2) a:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #cdffcd;
+    padding: 3vw;
+    margin: 0vw 3vw 10vw 3vw;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+
+    transition: background 500ms ease-in;
+}
+
+body.charity main section:nth-of-type(2) a:first-of-type:hover {
+    background: #d6ecff;
+}
+
+body.charity main section:nth-of-type(2) img:first-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    margin: .5em;
+    max-width: 90%;
+}
+    /*Stichting D-Dog*/
+body.charity main section:nth-of-type(2) h3:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    margin-top: .5em;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(8) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+body.charity main section:nth-of-type(2) p:nth-of-type(9) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+body.charity main section:nth-of-type(2) a:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #cdffcd;
+    padding: 3vw;
+    margin: 0vw 3vw 10vw 3vw;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+
+    transition: background 500ms ease-in;
+}
+
+body.charity main section:nth-of-type(2) a:nth-of-type(2):hover {
+    background: #d6ecff;
+}
+
+body.charity main section:nth-of-type(2) img:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    margin: .5em;
+    max-width: 90%;
 }
     /* footer \/ */
 footer {
