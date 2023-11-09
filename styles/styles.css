@@ -505,6 +505,10 @@ body.charity main section:nth-of-type(3) a {
 body.charity main section:nth-of-type(3) a:hover {
     background: #d6ecff;
 }
+    /* page4 - status \/ */
+body.status main section {
+    margin: 40vh 0;
+}
     /* contact form */
 body.contact {
     background-image: url(../images/background_contact.jpg);
