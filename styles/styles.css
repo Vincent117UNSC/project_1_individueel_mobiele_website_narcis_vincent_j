@@ -110,7 +110,6 @@ header h1 {
 header nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
     font-size: 2em;
     position: fixed;
     bottom: 0;
@@ -509,7 +508,7 @@ body.charity main section:nth-of-type(3) a:hover {
 body.status main section {
     margin: 40vh 0;
 }
-    /* contact form */
+    /* contact form \/ */
 body.contact {
     background-image: url(../images/background_contact.jpg);
     background-size: 100vh;
@@ -535,6 +534,94 @@ body.contact main section img {
     max-width: 100%;
     padding: .3em;
     margin: 0 auto;
+}
+    /* social information \/ */
+body.socials {
+    background-image: url(../images/background_socials.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+body.socials main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.socials main section {
+    width: 75%;
+    border: 2px solid #082878;
+    border-radius: .2em;
+    margin-top: 10vw;
+}
+
+body.socials main section img {
+    display: block;
+    max-width: 100%;
+    margin: .5em auto;
+}
+
+body.socials main section ul:first-of-type {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+body.socials main section ul:nth-of-type(2) {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+body.socials main section ul:nth-of-type(2) li a {
+    display: block;
+    border-radius: .2em;
+    margin: .6em;
+}
+
+body.socials main section ul:nth-of-type(2) li a{
+    transition: background 100ms linear;
+}
+
+body.socials main section ul:nth-of-type(2) li:first-of-type a:hover {
+    background-color: #E1306C;
+}
+
+body.socials main section ul:nth-of-type(2) li:first-of-type a:active {
+    background-color: #833AB4;
+}
+
+body.socials main section ul:nth-of-type(2) li:nth-of-type(2) a:hover {
+    background-color: #1877F2;
+}
+
+body.socials main section ul:nth-of-type(2) li:nth-of-type(2) a:active {
+    background-color: #5594e7;
+}
+
+body.socials main section ul:nth-of-type(2) li:nth-of-type(3) a:hover {
+    background-color: #005A9C;
+}
+
+body.socials main section ul:nth-of-type(2) li:nth-of-type(3) a:active {
+    background-color: #000;
+}
+
+body.socials main section:last-of-type ul:nth-of-type(2) li:first-of-type a:hover {
+    background-color: #1877F2;
+}
+
+body.socials main section:last-of-type ul:nth-of-type(2) li:first-of-type a:active {
+    background-color: #5594e7;
+}
+
+body.socials main section:last-of-type ul:nth-of-type(2) li:nth-of-type(2) a:hover {
+    background-color: #005A9C;
+}
+
+body.socials main section:last-of-type ul:nth-of-type(2) li:nth-of-type(2) a:active {
+    background-color: #000;
 }
     /* footer \/ */
 footer {
